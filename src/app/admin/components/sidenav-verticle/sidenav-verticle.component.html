@@ -1,0 +1,35 @@
+<div class="form-row g-0">
+    <div class="col-12 d-flex pb-xl-4">
+        <div class="my-auto">
+            <span class="material-icons logo">fingerprint</span>
+        </div>
+        <div class="company">
+            <h3>Aceme Co.</h3>
+            <h4 class="muted">Palo Alto, Ca</h4>
+        </div>
+    </div>
+    <div class="col-12">
+        <h6 class="muted group-title">Main Menu</h6>
+    </div>
+    <div class="col-12" *ngFor="let item of lstMainMenus, let isLast = last" [ngClass]="{'mb-3': isLast}">
+        <div class="menu-items">
+            <h4>{{item.label}}</h4>
+        </div>
+    </div>
+    <div class="col-12">
+        <h6 class="muted group-title">Workflows</h6>
+    </div>
+    <div class="col-12" *ngFor="let item of lstMainMenus, let isLast = last" [ngClass]="{'mb-3': isLast}">
+        <div class="menu-items">
+            <h4>{{item.label}}</h4>
+        </div>
+    </div>
+    <div class="col-12">
+        <h6 class="muted group-title">General</h6>
+    </div>
+    <div class="col-12" *ngFor="let item of lstMainMenus, let isLast = last" [ngClass]="{'mb-3': isLast}">
+        <div class="menu-items">
+            <h4>{{item.label}}</h4>
+        </div>
+    </div>
+</div>

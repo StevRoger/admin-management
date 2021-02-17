@@ -1,0 +1,43 @@
+.logo {
+    border: 1px solid #292929;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #292929, $alpha: 0.45);
+    }
+}
+.company {
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    h3,
+    h4 {
+        margin-bottom: 0 !important;
+    }
+    h3 {
+        font-weight: 500;
+    }
+    h4 {
+        font-weight: 400;
+    }
+}
+.menu-items {
+    padding: 10px 0px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    margin: 2px 0px;
+
+    h4 {
+        margin-bottom: 0 !important;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+    }
+    &:hover {
+        transition: background-color 0.2s ease;
+        cursor: pointer;
+        background-color: #052440;
+    }
+}
